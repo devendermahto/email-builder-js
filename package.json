@@ -8,7 +8,8 @@
     "dist"
   ],
   "scripts": {
-    "postinstall": "git config core.hooksPath .githooks && chmod +x .githooks/*"
+    "build": "node canary.js && tsc",
+    "prepare": "node canary.js"
   },
   "author": "carlos@usewaypoint.com",
   "license": "MIT",
